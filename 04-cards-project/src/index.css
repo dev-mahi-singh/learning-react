@@ -12,11 +12,14 @@ body {
 }
 
 .parent {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #111;
   padding: 30px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -59,29 +62,29 @@ body {
   color: #8b8b8b;
 }
 
-.center h3{
+.center h3 {
   font-size: 17px;
   font-weight: 500;
 }
 
-.center h3 span{
+.center h3 span {
   font-size: 9px;
   font-weight: 400;
   color: #b8b8b8;
 }
 
-.center h2{
+.center h2 {
   font-size: 20px;
   font-weight: 600;
 }
 
-.center .tag{
+.center .tag {
   display: flex;
   gap: 5px;
   margin-top: 10px;
 }
 
-.center .tag h4{
+.center .tag h4 {
   font-size: 10px;
   font-weight: 500;
   background-color: #dadada;
@@ -98,7 +101,7 @@ body {
   padding-top: 15px;
 }
 
-.bottom button{
+.bottom button {
   background-color: black;
   color: white;
   padding: 5px 10px;
@@ -107,11 +110,11 @@ body {
   font-weight: 600;
 }
 
-.bottom h3{
+.bottom h3 {
   font-size: 17px;
 }
 
-.bottom p{
+.bottom p {
   font-size: 10px;
   color: #8b8b8b;
 }
