@@ -24,3 +24,9 @@ input{
   margin: 10px;
   padding: 10px 20px;
 }
+
+.box{
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+}
