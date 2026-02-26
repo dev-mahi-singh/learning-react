@@ -19,3 +19,8 @@ button{
   font-size: 18px;
   border: none;
 }
+
+input{
+  margin: 10px;
+  padding: 10px 20px;
+}
