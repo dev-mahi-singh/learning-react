@@ -2,18 +2,29 @@ import React, { useState } from 'react'
 
 const App = () => {
 
-  const [num, setNum] = useState(10)
-  const [username, setUsername] = useState('Mahie')
+  const [num, setNum] = useState(0)
 
-  function changeNum(){
-    setNum(30)
-    setUsername('Sarthak')
+  const increaseNum = () => {
+    setNum(num + 1)
+  }
+
+  const decreaseNum = () => {
+    setNum(num - 1)
+  }
+
+  const jump5Num = () => {
+    setNum(num + 5)
   }
 
   return (
-    <div>
-      <h1>Value of num is {num} <br /> value of username is {username} </h1>
-      <button onClick={changeNum}>Click</button>
+    <div className='parent'>
+      <h1>{num}</h1>
+      <div>
+        <button onClick={increaseNum}>increase</button>
+        <button onClick={decreaseNum}>decrease</button>
+      </div>
+      <button onClick={jump5Num}>increase by 5</button>
+
     </div>
   )
 }
