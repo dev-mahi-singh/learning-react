@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 
 const App = () => {
 
-  const [num, setNum] = useState([10, 20, 30])
+  const [num, setNum] = useState(10)
 
   const btnClicked = () => {
-    const newNum = [...num];
-    newNum.push(99);
-    setNum(newNum);
+    setNum(prev => (prev + 1))
+    setNum(prev => (prev + 1))
+    setNum(prev => (prev + 1))
   }
 
   return (
