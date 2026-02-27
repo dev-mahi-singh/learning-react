@@ -5,8 +5,10 @@ const App = () => {
   const [num, setNum] = useState({ user: 'Mahie', age: 19 })
 
   const btnClicked = () => {
-    console.log(num.user);
-    console.log(num.age);
+    const newNum = { ...num };
+    newNum.user = 'Sarthak';
+    newNum.age = 29;
+    setNum(newNum);
   }
 
   return (
