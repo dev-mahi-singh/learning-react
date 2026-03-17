@@ -4,8 +4,8 @@ import axios from 'axios';
 const App = () => {
 
   const getData = async () => {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-    console.log(response.data);
+    const {data} = await axios.get('https://jsonplaceholder.typicode.com/users');
+    console.log(data);
     
   }
 
