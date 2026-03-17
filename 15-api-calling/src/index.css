@@ -10,6 +10,10 @@ body {
   width: 100%;
 }
 
+body{
+  background-color: #222;
+}
+
 button{
   margin: 10px;
   padding: 12px 22px;
@@ -18,4 +22,29 @@ button{
   background-color: rgb(113, 111, 111);
   color: white;
   font-size: 20px;
+}
+
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: white;
+  padding: 0px 50px;
+}
+
+.card{
+  height: 150px;
+  width: 450px;
+  background-color: rgb(227, 123, 123);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
