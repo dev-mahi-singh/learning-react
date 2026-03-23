@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 
 const App = () => {
   const [num, setNum] = useState(0);
-  useEffect(function () {
-    console.log("Use effect is running...");
 
-  })
+  useEffect(function () {
+    console.log("use effect is running...");
+  }, []);
+
   return (
     <div>
       <h1>{num}</h1>
