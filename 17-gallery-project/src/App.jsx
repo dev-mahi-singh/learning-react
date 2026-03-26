@@ -28,11 +28,12 @@ const App = () => {
   }
 
   return (
-    <div className='h-screen w-full bg-gradient-to-r from-cyan-50 from- via-fuchsia-100 via-'>
+    <div className='h-screen w-full bg-gradient-to-r from-cyan-50 via-fuchsia-100 to purple-100'>
       <h1 className="text-4xl text-center py-3 font-bold">Image Gallery</h1>
 
-      <div className="grid grid-cols-2 bg-white md:grid-cols-3 lg:grid-cols-3 rows-[10px] gap-4 m-2 rounded-xl">{printUserData}
-      </div>
+      <div className="columns-2 md:columns-3 lg:columns-4 gap-4 p-2">
+  {printUserData}
+</div>
 
       <Button index={index} setIndex={setIndex} setUserData={setUserData} />
     </div>
